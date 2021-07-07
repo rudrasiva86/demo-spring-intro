@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.rudrasiva86.model.Product;
 
-public class HibernateProductRepository implements ProductRepository {
+public class HibernateProductRepository implements IProductRepository {
 
 	@Override
 	public List<Product> findAll() {

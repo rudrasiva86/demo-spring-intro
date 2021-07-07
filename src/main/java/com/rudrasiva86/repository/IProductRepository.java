@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.rudrasiva86.model.Product;
 
-public interface ProductRepository {
+public interface IProductRepository {
 	List<Product> findAll();
 }
