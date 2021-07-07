@@ -18,5 +18,7 @@
 	- Simply calling a setter method
 	- Mystery of dependency injection goes away
 		- with xml configuration its like a black box and makes us wonder whats going on behind the scenes
-
+4. Constructor Injection
+	- provide a constructor in the bean to set the dependencies
+	- remove the setter
 	
