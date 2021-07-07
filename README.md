@@ -43,6 +43,19 @@
 	- Guarantees New instance per request
 	- Java Config
 		- @Scope("prototype")
+4. Request
+	- Web scope
+	- new instance per http request
+5. Session
+	- new instance per http session
+	- spans across multiple request until the session is alive
+6. Global
+	- Single bean per application
+	- just like singleton
+	- alive until application restart
 
-
-	
+### Autowiring
+- magic
+- convention over configuration
+- add @Autowired
+	- setter injection
