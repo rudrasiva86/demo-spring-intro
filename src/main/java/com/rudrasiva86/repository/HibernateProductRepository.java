@@ -4,8 +4,11 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.rudrasiva86.model.Product;
 
+@Repository("productRepository")
 public class HibernateProductRepository implements IProductRepository {
 
 	@Override

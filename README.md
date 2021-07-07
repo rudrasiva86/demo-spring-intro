@@ -55,7 +55,16 @@
 	- alive until application restart
 
 ### Autowiring
-- magic
 - convention over configuration
 - add @Autowired
 	- setter injection
+- Stereotype annotations
+	- @Component
+	- @Repository
+	- @Service
+	- @Controller
+- @ComponentScan({"com.rudrasiva86"})
+	- magic
+	- @Bean is applicable is only on methods
+		- so use stereotype annotations on classes
+	
