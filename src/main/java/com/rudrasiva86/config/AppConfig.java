@@ -13,12 +13,10 @@ import com.rudrasiva86.service.ProductService;
 @ComponentScan("com.rudrasiva86")
 public class AppConfig {
 	
-	// setter injection
+	// constructor injection
 	@Bean(name="productService")
 	public IProductService getProductService() {
-		ProductService productService = new ProductService();
-		productService.setProductRepository(getProductRepository());
-		return productService;
+		return new ProductService(getProductRepository());
 	}
 	
 	@Bean(name="productRepository")

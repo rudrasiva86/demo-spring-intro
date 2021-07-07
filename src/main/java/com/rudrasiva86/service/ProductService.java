@@ -9,7 +9,7 @@ public class ProductService implements IProductService {
 	
 	private IProductRepository productRepository;
 
-	public void setProductRepository(IProductRepository productRepository) {
+	public ProductService(IProductRepository productRepository) {
 		this.productRepository = productRepository;
 	}
 
