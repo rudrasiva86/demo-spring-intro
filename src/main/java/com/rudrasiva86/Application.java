@@ -13,8 +13,12 @@ public class Application {
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		IProductService productService = ctx.getBean("productService", ProductService.class);
+		System.out.println(productService);
 		
 		System.out.println(productService.findAll());
 		
+		IProductService productService2 = ctx.getBean("productService", ProductService.class);
+		System.out.println(productService2);
+		// verify the object address for both the instances of product service
 	}
 }

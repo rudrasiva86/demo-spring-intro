@@ -21,4 +21,28 @@
 4. Constructor Injection
 	- provide a constructor in the bean to set the dependencies
 	- remove the setter
+
+### Bean Scopes
+1. 5 Scopes
+	- Valid in any configuration
+		- Singleton
+		- Prototype
+	- Valid only in web-aware spring projects
+		- Request
+		- Session
+		- Global
+2. Singleton
+	- Implies Only one instance
+	- one instance per application context/spring container
+	- Default bean scope
+	- Java Config
+		- @Scope("singleton")
+		- Requires AOP jar
+			- maven has transitive dependency and will be added already
+3. Prototype
+	- Guarantees New instance per request
+	- Java Config
+		- @Scope("prototype")
+
+
 	
