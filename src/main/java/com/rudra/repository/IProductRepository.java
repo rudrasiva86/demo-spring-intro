@@ -1,8 +1,8 @@
-package com.rudrasiva86.repository;
+package com.rudra.repository;
 
 import java.util.List;
 
-import com.rudrasiva86.model.Product;
+import com.rudra.model.Product;
 
 public interface IProductRepository {
 	List<Product> findAll();

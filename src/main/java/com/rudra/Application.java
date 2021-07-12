@@ -1,11 +1,11 @@
-package com.rudrasiva86;
+package com.rudra;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.rudrasiva86.config.AppConfig;
-import com.rudrasiva86.service.IProductService;
-import com.rudrasiva86.service.ProductService;
+import com.rudra.config.AppConfig;
+import com.rudra.service.IProductService;
+import com.rudra.service.ProductService;
 
 public class Application {
 	
@@ -15,5 +15,6 @@ public class Application {
 		IProductService productService = ctx.getBean("productService", ProductService.class);
 		
 		System.out.println(productService.findAll());
+		((AnnotationConfigApplicationContext)ctx).close();
 	}
 }

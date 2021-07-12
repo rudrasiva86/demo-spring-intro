@@ -63,7 +63,7 @@
 	- @Repository
 	- @Service
 	- @Controller
-- @ComponentScan({"com.rudrasiva86"})
+- @ComponentScan({"com.rudra"})
 	- magic
 	- @Bean is applicable is only on methods
 		- so use stereotype annotations on classes

@@ -1,4 +1,4 @@
-package com.rudrasiva86.repository;
+package com.rudra.repository;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.rudrasiva86.model.Product;
+import com.rudra.model.Product;
 
 @Repository("productRepository")
 public class HibernateProductRepository implements IProductRepository {

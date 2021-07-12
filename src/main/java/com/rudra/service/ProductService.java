@@ -1,12 +1,12 @@
-package com.rudrasiva86.service;
+package com.rudra.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rudrasiva86.model.Product;
-import com.rudrasiva86.repository.IProductRepository;
+import com.rudra.model.Product;
+import com.rudra.repository.IProductRepository;
 
 @Service("productService")
 //@Scope(value=BeanDefinition.SCOPE_SINGLETON)

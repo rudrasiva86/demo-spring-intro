@@ -1,4 +1,4 @@
-package com.rudrasiva86.model;
+package com.rudra.model;
 
 import java.math.BigDecimal;
 
